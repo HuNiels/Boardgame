@@ -1,0 +1,9 @@
+Name,Art,Aquire,Cost,Effect
+Action,,,A,3 (Range) Range<br /> 1 (Cast) Action (Allow the target to cast a spell on your turn using their energy and spells)
+Discard,,,F,1 (Discard) Discard. 1 (Draw) Draw
+Slow,,,W,3 (Range) Range<br />  Slow (Slow)
+Reuse,,,E,Move 1 card from your (DiscardPile) Discard Pile to your (Deck) Deck
+Damage,,,F,1 (Damage) Damage
+Move,,,A,1 (Move) Move
+Draw,,,W,1 (Draw) Draw
+Block,,,E,1 (Block) Block (Ignore the next wound/condition you would get before the start of your next turn)

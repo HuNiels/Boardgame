@@ -1,0 +1,5 @@
+HTMLIMAGE = , {Heal}, Join([Path],Health.png), 0.5, 0.5, P
+HTMLIMAGE = , {Target}, Join([Path],Target.png), 0.5, 0.5, P
+HTMLIMAGE = , {Draw}, Join([Path],Draw.png), 0.5, 0.5, P
+HTMLIMAGE = , {Growth}, Join([Path],Growth.png), 0.5, 0.5, P
+HTMLIMAGE = , {BAOE}, Join([Path],7Aoe.png), 2, 2, P

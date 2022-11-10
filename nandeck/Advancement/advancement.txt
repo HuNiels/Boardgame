@@ -1,0 +1,35 @@
+LINK = "Advancement.csv"
+
+
+; Settings
+Border = RECTANGLE, #000000, 0.5
+
+; Icons
+
+ICON = , M, meat.png
+ICON = , D, card-discard.png
+ICON = , S, stone-spear.png
+HTMLIMAGE =, (M), meat.png, 0.2, 0.2, P
+HTMLIMAGE =, (D), card-discard.png, 0.2, 0.2, P
+HTMLIMAGE =, (S), stone-spear.png, 0.2, 0.2, P
+HTMLIMAGE =, (H), claw-hammer.png, 0.2, 0.2, P
+HTMLIMAGE =, (E), semi-closed-eye.png, 0.2, 0.2, P
+
+VISUAL=GP, 15, 15
+;Rectangle(snap)
+RECTANGLE=LABELRANGE([Background],G),0%,0%,100%,100%,#00FF00
+;Rectangle(snap)
+RECTANGLE=LABELRANGE([Background],R),0%,0%,100%,100%,#FF0000
+;Rectangle(snap)
+RECTANGLE=LABELRANGE([Background],W),0%,0%,100%,100%,#FFFFFF
+;IMAGE(snap)
+IMAGE="1-{(IMAGE)}",[IMAGE],20%,{200/15}%,{359/6}%,{421/9}%
+;Font(snap)
+FONT=Arial,24,,#000000
+;TITLE(snap)
+TEXT="1-{(TITLE)}",[TITLE],0%,0%,100%,{122/9}%
+;Icons(snap)
+ICONS="1-{(Bottom Cost)}",[Bottom Cost],{100/15}%,{1300/15}%,47%,{65/9}%,5%,5%,0,P
+;HTMLText(snap)
+HTMLTEXT="1-{(BOTTOM EFFECT)}",[BOTTOM EFFECT],20%,{1100/15}%,27%,{58/9}%
+ENDVISUAL

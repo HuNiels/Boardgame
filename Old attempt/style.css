@@ -1,0 +1,78 @@
+
+:root {
+    --width: 1280px;
+    --height: 720px;
+}
+
+body{
+    font-family: "Sans-serif", Verdana;
+    font-size: 20px;
+}
+
+.board{
+    /* background-image: url(images/background.png); */
+    background-color: #c09393;
+    height: var(--height);
+    width: var(--width);
+}
+
+.hero_art{
+    position: relative;
+}
+
+.hero_image{
+    width: 100%;
+    height: calc(var(--height)*2/3);
+}
+
+.hero_name{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 100%;
+    font-family: "Copperplate",fantasy;
+    font-size: 50px;
+    color: red;
+}
+
+.character-rule{   
+    width: 100%;
+    height: calc(var(--height)/3);
+    border-right-style: solid;
+    border-color:black;
+}
+
+.character-rule-title{
+    font-family: "Sans-serif", Verdana;
+    font-size: 24px;
+    font-style: bold;
+}
+
+.attack{
+    background-color: rgb(245, 78, 78);
+}
+.defense{
+    background-color: rgb(74, 131, 255);
+}
+.utility{
+    background-color: rgb(138, 255, 157);
+}
+
+.ability{
+    height: calc(var(--height)/9);
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color:black;
+    text-align: center;
+}
+
+/* .ability_requirement{
+} */
+
+.ability_effect{
+    word-wrap: break-word;
+}
+
+.icon-large{
+    height:calc(calc(var(--height)/9)*0.9);
+}

@@ -1,0 +1,79 @@
+Link = Elemental Deckbuilder - Export van Starting & Neutrals.csv
+
+;Variables
+[Path] = "../Icons/"
+;Settings
+[back]=#DD7722
+[box_back]=#FFAA55
+[box_border]=#DD7722
+[all]="1-{(title)}"
+
+;HTMLIMAGES and ICONS
+
+;Elements
+ICON = , A, Join([Path],Air.png)
+ICON = , E, Join([Path],Earth.png)
+ICON = , F, Join([Path],Fire.png)
+ICON = , W, Join([Path],Water.png)
+ICON = , X, Join([Path],Any.png)
+HTMLIMAGE = , (Air), Join([Path],Air.png), 0.5, 0.5, P
+HTMLIMAGE = , (Earth), Join([Path],Earth.png), 0.5, 0.5, P
+HTMLIMAGE = , (Fire), Join([Path],Fire.png), 0.5, 0.5, P
+HTMLIMAGE = , (Water), Join([Path],Water.png), 0.5, 0.5, P
+HTMLIMAGE = , (Any), Join([Path],Any.png), 0.5, 0.5, P
+
+;Monsters
+HTMLIMAGE = , (Undead), Join([Path],Undead.png), 0.5, 0.5, P
+HTMLIMAGE = , (Cultist), Join([Path],Cultist.png), 0.5, 0.5, P
+HTMLIMAGE = , (Human), Join([Path],Human.png), 0.5, 0.5, P
+HTMLIMAGE = , (Monster), Join([Path],Monster.png), 0.5, 0.5, P
+HTMLIMAGE = , (Health), Join([Path],Health.png), 0.5, 0.5, P
+HTMLIMAGE = , (Wound), Join([Path],Wound.png), 0.5, 0.5, P
+HTMLIMAGE = , (Condition), Join([Path],Condition.png), 0.5, 0.5, P
+
+;Card Effects
+HTMLIMAGE = , (Damage), Join([Path],Damage.png), 0.5, 0.5, P
+HTMLIMAGE = , (Move), Join([Path],Move.png), 0.5, 0.5, P
+HTMLIMAGE = , (Range), Join([Path],Range.png), 0.5, 0.5, P
+HTMLIMAGE = , (Untap), Join([Path],Active.png), 0.5, 0.5, P
+HTMLIMAGE = , (Push), Join([Path],Push.png), 0.5, 0.5, P
+HTMLIMAGE = , (Pull), Join([Path],Pull.png), 0.5, 0.5, P
+HTMLIMAGE = , (Discard), Join([Path],Discard.png), 0.5, 0.5, P
+HTMLIMAGE = , (Upgrade), Join([Path],Upgrade.png), 0.5, 0.5, P
+HTMLIMAGE = , (Scry), Join([Path],Scry.png), 0.5, 0.5, P
+HTMLIMAGE = , (Destroy), Join([Path],Destroy.png), 0.5, 0.5, P
+HTMLIMAGE = , (Cast), Join([Path],Cast.png), 0.5, 0.5, P
+HTMLIMAGE = , (Slow), Join([Path],Slow.png), 0.5, 0.5, P
+HTMLIMAGE = , (Vulnerable), Join([Path],Vulnerable.png), 0.5, 0.5, P
+HTMLIMAGE = , (Block), Join([Path],Block.png), 0.5, 0.5, P
+HTMLIMAGE = , (SAOE), Join([Path],3Aoe.png), 2, 2, P
+HTMLIMAGE = , (Cleave3), Join([Path],3Cleave.png), 2, 2, P
+
+HTMLIMAGE = , (Heal), Join([Path],Health.png), 0.5, 0.5, P
+HTMLIMAGE = , (Target), Join([Path],Target.png), 0.5, 0.5, P
+HTMLIMAGE = , (Draw), Join([Path],Draw.png), 0.5, 0.5, P
+HTMLIMAGE = , (Growth), Join([Path],Growth.png), 0.5, 0.5, P
+HTMLIMAGE = , (BAOE), Join([Path],7Aoe.png), 2, 2, P
+
+; Card locations
+HTMLIMAGE = , (Hand), Join([Path],Hand.png), 0.5, 0.5, P
+HTMLIMAGE = , (Discardpile), Join([Path],Discardpile.png), 0.5, 0.5, P
+HTMLIMAGE = , (Deck), Join([Path],Deck.png), 0.5, 0.5, P
+
+; Wounds & Conditions
+HTMLIMAGE = , (Wound), Join([Path],Wound.png), 0.5, 0.5, P
+
+VISUAL=G, 60, 60
+HTMLKEY=,.,,
+FONT=Arial,12,T,#000000
+RECTANGLE=,0%,0%,100%,100%,[back]
+RECTANGLE=,3%,3%,94%,8%,[box_back]
+RECTANGLE=,3%,14%,94%,{251/9}%,[box_back]
+RECTANGLE=,3%,45%,94%,52%,[box_back]
+TEXT="1-{(NAME)}",[NAME],4%,3%,66%,8%,CENTER
+ICONS="1-{(AQUIRE)}",[AQUIRE],70%,3%,26%,8%,8%,8%,0,PT,CENTER
+ICONS="1-{(COST)}",[COST],4%,45%,92%,10%,8%,8%,0,PT,CENTER
+FONT=Arial,20,,#000000
+HTMLTEXT="1-{(EFFECT)}",[EFFECT],4%,55%,{553/6}%,42%,#FFFFFF,0,TEB
+ENDVISUAL
+

@@ -1,0 +1,113 @@
+Link = Elemental Deckbuilder - Export Undead.csv
+
+;Variables
+[Path] = "../../Icons/"
+;Settings
+[back]=#AA0000
+[box_back]=#AA4444
+[box_border]=#AA0000
+[all]="1-{(title)}"
+
+;HTMLIMAGES and ICONS
+
+;Elements
+ICON = , A, Join([Path],Air.png)
+ICON = , E, Join([Path],Earth.png)
+ICON = , F, Join([Path],Fire.png)
+ICON = , W, Join([Path],Water.png)
+ICON = , X, Join([Path],Any.png)
+HTMLIMAGE = , (Air), Join([Path],Air.png), 0.3, 0.3, P
+HTMLIMAGE = , (Earth), Join([Path],Earth.png), 0.3, 0.3, P
+HTMLIMAGE = , (Fire), Join([Path],Fire.png), 0.3, 0.3, P
+HTMLIMAGE = , (Water), Join([Path],Water.png), 0.3, 0.3, P
+HTMLIMAGE = , (Any), Join([Path],Any.png), 0.3, 0.3, P
+
+;Monsters
+HTMLIMAGE = , (Undead), Join([Path],Undead.png), 0.3, 0.3, P
+HTMLIMAGE = , (Cultist), Join([Path],Cultist.png), 0.3, 0.3, P
+HTMLIMAGE = , (Human), Join([Path],Human.png), 0.3, 0.3, P
+HTMLIMAGE = , (Monster), Join([Path],Monster.png), 0.3, 0.3, P
+HTMLIMAGE = , (Health), Join([Path],Health.png), 0.3, 0.3, P
+HTMLIMAGE = , (Wound), Join([Path],Wound.png), 0.3, 0.3, P
+HTMLIMAGE = , (Condition), Join([Path],Condition.png), 0.3, 0.3, P
+HTMLIMAGE = , (Turnover), Join([Path],Turnover.png), 0.5, 0.5, P
+HTMLIMAGE = , (Flying), Join([Path],Flying.png), 0.3, 0.3, P
+HTMLIMAGE = , (Shield), Join([Path],Shield.png), 0.3, 0.3, P
+
+;Card Effects
+HTMLIMAGE = , (Damage), Join([Path],Damage.png), 0.3, 0.3, P
+HTMLIMAGE = , (Move), Join([Path],Move.png), 0.3, 0.3, P
+HTMLIMAGE = , (Range), Join([Path],Range.png), 0.3, 0.3, P
+HTMLIMAGE = , (Untap), Join([Path],Active.png), 0.3, 0.3, P
+HTMLIMAGE = , (Push), Join([Path],Push.png), 0.3, 0.3, P
+HTMLIMAGE = , (Pull), Join([Path],Pull.png), 0.3, 0.3, P
+HTMLIMAGE = , (Discard), Join([Path],Discard.png), 0.3, 0.3, P
+HTMLIMAGE = , (Upgrade), Join([Path],Upgrade.png), 0.3, 0.3, P
+HTMLIMAGE = , (Scry), Join([Path],Scry.png), 0.3, 0.3, P
+HTMLIMAGE = , (Destroy), Join([Path],Destroy.png), 0.3, 0.3, P
+HTMLIMAGE = , (Cast), Join([Path],Cast.png), 0.3, 0.3, P
+HTMLIMAGE = , (Slow), Join([Path],Slow.png), 0.3, 0.3, P
+HTMLIMAGE = , (Vulnerable), Join([Path],Vulnerable.png), 0.3, 0.3, P
+HTMLIMAGE = , (Block), Join([Path],Block.png), 0.3, 0.3, P
+HTMLIMAGE = , (SAOE), Join([Path],3Aoe.png), 2, 2, P
+HTMLIMAGE = , (Cleave3), Join([Path],3Cleave.png), 2, 2, P
+
+HTMLIMAGE = , (Heal), Join([Path],Health.png), 0.3, 0.3, P
+HTMLIMAGE = , (Target), Join([Path],Target.png), 0.3, 0.3, P
+HTMLIMAGE = , (Draw), Join([Path],Draw.png), 0.3, 0.3, P
+HTMLIMAGE = , (Growth), Join([Path],Growth.png), 0.3, 0.3, P
+HTMLIMAGE = , (BAOE), Join([Path],7Aoe.png), 2, 2, P
+
+; Card locations
+HTMLIMAGE = , (Hand), Join([Path],Hand.png), 0.3, 0.3, P
+HTMLIMAGE = , (Discardpile), Join([Path],Discardpile.png), 0.3, 0.3, P
+HTMLIMAGE = , (Deck), Join([Path],Deck.png), 0.3, 0.3, P
+
+; Wounds & Conditions
+HTMLIMAGE = , (Wound), Join([Path],Wound.png), 0.3, 0.3, P
+HTMLIMAGE = , (Poison), Join([Path],Poison.png), 0.3, 0.3, P
+HTMLIMAGE = , (Immobilize), Join([Path],Immobilize.png), 0.3, 0.3, P
+HTMLIMAGE = , (Disarm), Join([Path],Disarm.png), 0.3, 0.3, P
+HTMLIMAGE = , (Stun), Join([Path],Stun.png), 0.3, 0.3, P
+HTMLIMAGE = , (Curse), Join([Path],Curse.png), 0.3, 0.3, P
+
+
+[FullName] = JOIN(" ",[LEVEL]," ",[TYPE]," ",[IMPORT]," ",[NAME])
+
+
+VISUAL=P, 63, 88
+RECTANGLE=,0%,0%,100%,100%,[back]
+RECTANGLE=,3%,3%,77%,27%,[box_back]
+RECTANGLE=,81%,3%,16%,27%,[box_back]
+RECTANGLE=,3%,32%,94%,10%,[box_back]
+
+RECTANGLE=,3%,43%,10%,10%,[box_back]
+RECTANGLE=,14%,43%,83%,10%,[box_back]
+RECTANGLE=,3%,54%,10%,10%,[box_back]
+RECTANGLE=,14%,54%,83%,10%,[box_back]
+RECTANGLE=,3%,65%,10%,10%,[box_back]
+RECTANGLE=,14%,65%,83%,10%,[box_back]
+RECTANGLE=,3%,76%,10%,10%,[box_back]
+RECTANGLE=,14%,76%,83%,10%,[box_back]
+RECTANGLE=,3%,87%,10%,10%,[box_back]
+RECTANGLE=,14%,87%,83%,10%,[box_back]
+
+FONT=Arial Narrow,12,T,#000000,#000000
+HTMLFONT=FontName,Arial Narrow,8,,#000000,LEFT,0,0,0
+HTMLTEXT="1-{(FullName)}",[FullName],3%,3%,67%,27%,#FFFFFF,0,TEB,100,FontName
+HTMLTEXT="1-{(HP)}",[HP],82%,3%,7%,27%,#FFFFFF,0,TEB,100,FontName
+HTMLTEXT="1-{(HP)}",(Health),90%,3%,7%,27%,#FFFFFF,0,TEB,100,FontName
+IMAGE="1-{(ART)}",[ART],{100/63}%,{1000/88}%,{292/3}%,{281/9}%
+
+HTMLTEXT="1-{(ACTION 1)}",[SPECIAL],4%,33%,92%,8%,#FFFFFF,0,TEB,100,FontName
+HTMLTEXT="1-{(ACTION 1)}",[ACTION 1],16%,44%,81%,8%,#FFFFFF,0,TEB,100,FontName
+HTMLTEXT="1-{(ACTION 2)}",[ACTION 2],16%,55%,81%,8%,#FFFFFF,0,TEB,100,FontName
+HTMLTEXT="1-{(ACTION 3)}",[ACTION 3],16%,66%,81%,8%,#FFFFFF,0,TEB,100,FontName
+HTMLTEXT="1-{(ACTION 4)}",[ACTION 4],16%,77%,81%,8%,#FFFFFF,0,TEB,100,FontName
+HTMLTEXT="1-{(TURNOVER)}",[TURNOVER],16%,88%,81%,8%,#FFFFFF,0,TEB,100,FontName
+TEXT=,1,3%,43%,10%,10%
+TEXT=,2,3%,54%,10%,10%
+TEXT=,3,3%,65%,10%,10%
+TEXT=,4,3%,76%,10%,10%
+HTMLTEXT=,(TURNOVER),3%,87%,10%,10%,#FFFFFF,0,TEB,100
+ENDVISUAL
